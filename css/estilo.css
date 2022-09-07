@@ -1,0 +1,43 @@
+h1 {
+  color: orange; }
+
+header {
+  background-color: beige;
+  font-size: 20px;
+  display: grid;
+  grid-template-areas: "logo" "nav";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto; }
+  header div {
+    padding: 10px;
+    grid-area: logo; }
+    header div h3 {
+      font-size: 30px; }
+  header nav {
+    grid-area: nav; }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin-left: 40px; }
+  ul:hover {
+    color: orange; }
+
+li {
+  list-style-type: disc; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    color: brown; }
+
+.texto3 {
+  background-color: orange; }
+  .texto3--texto {
+    font-size: 20px;
+    weight: bold; }
+
+footer {
+  background-color: cadetblue;
+  padding: 40px; }

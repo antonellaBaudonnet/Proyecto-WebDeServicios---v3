@@ -1,0 +1,44 @@
+header {
+    background-color:beige;
+    font-size: 20px;
+    display: grid;
+    grid-template-areas: "logo""nav";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    div {
+        padding: 10px;
+        grid-area:logo;
+        h3 {
+            font-size:30px;
+        }
+    }
+    nav{
+        grid-area: nav; 
+    }
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-left: 40px;
+    &:hover{
+        color:$colorPrimario;
+    }  
+}
+li{
+    list-style-type: disc;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        color: $colorSecundario;
+    }
+}
+.texto3{
+    background-color: $colorPrimario;
+    &--texto{
+        font-size: 20px;
+        weight:bold; 
+    }
+}
+
