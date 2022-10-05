@@ -1,14 +1,5 @@
-footer {
-  background-color: rgb(236, 175, 8);
-  padding: 40px;
-}
-header {
-  background-color: beige;
-  font-size: 20px;
-  display: grid;
-  grid-template-areas: "logo""nav";
-  grid-template-columns: 30% 70%;
-  grid-template-rows: auto;
+.card {
+  margin: auto;
 }
 
 header div {
@@ -28,15 +19,23 @@ ul {
   display: flex;
   flex-direction: row;
   text-decoration: none;
-  margin-left: 40px;
 }
 
 ul:hover {
-  color: orange;
+  color: rgb(53, 39, 15);
 }
 
 li {
-  list-style-type: disc;
+  list-style-type: unset;
+}
+
+.row{
+  width: 100%;
+  margin: 0;
+}
+
+.col-lg-12{
+  padding: 0;
 }
 
 a {
@@ -47,6 +46,14 @@ a:hover {
   color: brown;
 }
 
+.h2, h2 {
+  font-size: 1.8rem;
+}
+
+.h5, h5{
+  color:#ffffff;
+}
+
 .texto3 {
   background-color: orange;
 }
@@ -54,18 +61,6 @@ a:hover {
 .texto3--texto {
   font-size: 20px;
   weight: bold;
-}
-
-
-
-header {
-  width: 320px;
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
-  body h1 {
-    font-size: 30px;
-  }
 }
 
 .colorPrimario {
@@ -84,17 +79,20 @@ header {
   color: white;
 }
 
-div.encabezado {
-  color: red;
-  text-align: center;
-  font-size: 35px;
-}
-div {
-  color: rgb(32, 4, 4);
-  background-color: rgb(241, 241, 159);
+.carousel-item {
+  height: 45rem;
 }
 
-.carousel-item {
-  height: 32rem;
-  object-fit: cover;
+@media only screen and (max-width: 469px) {
+  body h1 {
+    font-size: 30px;
+  }
+  .carousel-item{
+    height: inherit;
+  }
 }
+
+
+
+
+
